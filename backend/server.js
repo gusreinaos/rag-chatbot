@@ -152,7 +152,7 @@ app.post("/chat", async (req, res) => {
       // Check if aggregation returned results and prepare prompt accordingly.
       if (aggregationResponse.length > 0) {
         const { pdfFileName, sentence, pageNumber } = aggregationResponse[0];
-        mongoContext = `Answer the user based on the Relevant context, always tell the user the name of the pdf file and the page number as part of your answer: "${sentence}" from ${pdfFileName}, page ${pageNumber}.`;
+        mongoContext = `Answer the user solely based on the content of the files learnt, make sure to mention the file where you get the information from. Relevant context, always tell the user the name of the pdf file and the page number as part of your answer: "${sentence}" File Name ${pdfFileName}, page ${pageNumber}.`;
 
         prompt = {
           context: mongoContext,

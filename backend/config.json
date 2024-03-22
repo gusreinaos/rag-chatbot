@@ -1,12 +1,12 @@
 {
     "mongoDB": {
-        "mongoUri": "mongodb+srv://<username>:<password>@cluster0.example.mongodb.net/",
+        "mongoUri": "mongodb+srv://gusreinaos:phfzOTK83Are64bE@cluster0.xlanyit.mongodb.net/",
         "dbName": "gcp-rag",
         "collectionName": "rag-data"
     },
     "googleCloud": {
         "apiEndpoint": "us-central1-aiplatform.googleapis.com",
-        "project": "<YOUR PROJECT NAME>",
+        "project": "mongodb-chatbot-417914",
         "location": "us-central1",
         "publisher": "google",
         "model": "chat-bison@001",
